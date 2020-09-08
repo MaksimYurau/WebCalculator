@@ -14,7 +14,7 @@ import java.io.PrintWriter;
 public class HomeServlet extends HttpServlet {
     private CalcOperations calcOperations = new CalcOperations();
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws  IOException {
         String x = req.getParameter("x");
         String y = req.getParameter("y");
         String opType = req.getParameter("opType");
